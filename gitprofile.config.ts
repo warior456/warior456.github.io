@@ -24,6 +24,14 @@ const CONFIG = {
             'https://cdn.modrinth.com/data/IpnJiCsh/images/ce56d810d15395fb977cbf05549fc5d10822785c.png',
           link: 'https://modrinth.com/mod/sculk-depths',
         },
+        {
+          title: 'Sculk Depths Wiki',
+          description:
+            '',
+          imageUrl:
+            'https://github.com/warior456/Sculk-Depths/assets/66562258/ed25e0c5-3d5c-4bf4-9785-f224eaf32d47',
+          link: 'https://warior456.github.io/Sculk-Depths/',
+        },
       ],
     },
     github: {
