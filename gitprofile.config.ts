@@ -10,7 +10,9 @@ const CONFIG = {
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
   base: '/',
-  external: {
+  
+  projects: {
+    external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
@@ -24,7 +26,6 @@ const CONFIG = {
         },
       ],
     },
-  projects: {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projects',
