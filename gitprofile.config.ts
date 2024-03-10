@@ -10,25 +10,7 @@ const CONFIG = {
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
   base: '/',
-  projects: {
-    github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
-      automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
-        exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
-        },
-      },
-      manual: {
-        // Properties for manually specifying projects
-        projects: [], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
-      },
-    },
-    external: {
+  external: {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
@@ -41,6 +23,24 @@ const CONFIG = {
           link: 'https://modrinth.com/mod/sculk-depths',
         },
       ],
+    },
+  projects: {
+    github: {
+      display: true, // Display GitHub projects?
+      header: 'Github Projects',
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
+      automatic: {
+        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
+        limit: 8, // How many projects to display.
+        exclude: {
+          forks: false, // Forked projects will not be displayed if set to true.
+          projects: ['warior456/Sculk-Depths', 'warior456/mrdia-main','warior456/More-Layered-Blocks'], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        },
+      },
+      manual: {
+        // Properties for manually specifying projects
+        projects: [], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+      },
     },
   },
   seo: {
